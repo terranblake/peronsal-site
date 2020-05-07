@@ -10,7 +10,7 @@ console.log({ apolloServerURI });
 
 const client = apolloServerURI
   ? new ApolloClient({
-    uri: process.env.APOLLO_SERVER_URI
+    uri: apolloServerURI
   })
   : null;
 
