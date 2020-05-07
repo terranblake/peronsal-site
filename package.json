@@ -15,8 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build --passWithNoTests",
-    "test": "react-scripts test",
+    "build": "react-scripts build",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "deploy": "yarn build && aws s3 sync build/ s3://terranblake.com --delete"
   },
