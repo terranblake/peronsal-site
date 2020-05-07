@@ -5,7 +5,8 @@ import ApolloClient from 'apollo-boost';
 import gql from 'graphql-tag';
 import { ApolloProvider, Query } from 'react-apollo';
 
-const apolloServerURI = process.env.APOLLO_SERVER_URI;
+const apolloServerURI = 'https://desolate-scrubland-72419.herokuapp.com:59648/';
+console.log({ apolloServerURI });
 
 const client = apolloServerURI
   ? new ApolloClient({
